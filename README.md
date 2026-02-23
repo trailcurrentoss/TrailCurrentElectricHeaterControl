@@ -1,6 +1,6 @@
 # TrailCurrent Electric Heater Control
 
-Firmware and hardware module for controlling an electric heater via CAN bus with OTA firmware update capability.
+Firmware and hardware module for controlling an electric heater via CAN bus with OTA firmware update capability. Part of the [TrailCurrent](https://trailcurrent.com) open-source vehicle platform.
 
 ## Hardware Overview
 
