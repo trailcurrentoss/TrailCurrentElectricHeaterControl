@@ -1,4 +1,4 @@
-# TrailCurrent Electric Heater Control
+# TrailCurrent Therma
 
 Firmware and hardware module for controlling an electric heater via CAN bus with OTA firmware update capability. Part of the [TrailCurrent](https://trailcurrent.com) open-source vehicle platform.
 
@@ -17,7 +17,7 @@ Firmware and hardware module for controlling an electric heater via CAN bus with
 
 ### Components
 
-- **Microcontroller:** ESP32-C6-Super-Mini
+- **Microcontroller:** [Waveshare ESP32-C6-Zero](https://www.waveshare.com/esp32-c6-zero.htm?aff_id=Trailcurrent) — selected for its extensive documentation, small footprint, pre-soldered programming pins, castellations for direct PCB integration, and low power consumption
 - **Sensors:** DHT22 temperature/humidity
 - **Communication:** CAN bus transceiver (TX: GPIO 15, RX: GPIO 14)
 - **Status:** RGB LED on GPIO 8
@@ -45,7 +45,7 @@ See [KICAD_ENVIRONMENT_SETUP.md](https://github.com/trailcurrentoss/TrailCurrent
 1. **Set up environment variables** (see Library Dependencies above)
 2. **Open KiCAD:**
    ```bash
-   kicad EDA/TrailCurrentElectricHeaterControl/TrailCurrentElectricHeaterControl.kicad_pro
+   kicad EDA/TrailCurrentTherma/TrailCurrentTherma.kicad_pro
    ```
 3. **Verify libraries load** - All symbol and footprint libraries should resolve without errors
 4. **View 3D models** - Open PCB and press `Alt+3` to view the 3D visualization
@@ -99,7 +99,7 @@ All dependencies are automatically resolved by PlatformIO during the build proce
 
 ```
 ├── EDA/                          # KiCAD hardware design files
-│   └── TrailCurrentElectricHeaterControl/
+│   └── TrailCurrentTherma/
 │       ├── *.kicad_pro           # KiCAD project
 │       ├── *.kicad_sch           # Schematic
 │       └── *.kicad_pcb           # PCB layout
